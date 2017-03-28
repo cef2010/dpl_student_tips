@@ -53,7 +53,12 @@ __*Keep Your Computer Running Clean and Lean*__
   - Use `iTerm` ! It offers a lot of small conveniences that OSX's `Terminal` does not, and looks better doing it.
   - As you get better with your keyboard, you might find that the arrow keys don't cause the cursor to zip around as quickly as you'd like. Your system preferences will let you turn your key repeat rate down pretty low, but not the *lowest*. Opening your command line and running:
     ```
+    OSX
     defaults write NSGlobalDomain KeyRepeat -int 0
+
+    macOs
+    defaults write NSGlobalDomain KeyRepeat -int 1
+    defaults write NSGlobalDomain InitialKeyRepeat -int 15
     ```
     will set your key repeat rate as low as possible, so your cursor will be moving as quickly as possible, keeping you coding and not tapping the arrow keys.
   - Try to come up with a file structure that works well for you. A strongly recommended structure that can help lead to fewer Github headaches down the road is to have all of your work for this course in one over-arching folder (`DPL` in this example):
